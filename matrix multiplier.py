@@ -47,8 +47,9 @@ def getMatrix():
         n = int(n_raw)
         m = int(m_raw)
         p = int(p_raw)
+        assert(n > 0 and m > 0 and p > 0)
     except: 
-        print("n, m, and p must be integers.")
+        print("n, m, and p must be natural numbers.")
         
     print("Enter your matrices.")
     matrix1 = []
