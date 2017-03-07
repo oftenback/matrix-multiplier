@@ -28,11 +28,11 @@ def matrixMultiply(matrix1, matrix2):
         m = len(matrix1)
         p = len(matrix2[0])
         soln = []
-        for i in range(m):
+        for i in range(m):     
             row = []
-            soln.append(row)
             for j in range(p):
                 row.append(dotProduct(matrix1[i], getColumn(j, matrix2)))
+            soln.append(row)
         return soln
     except:
         print("Check dimensions of matrices. The number of columns in the first matrix must equal the number of rows in the second matrix.")
