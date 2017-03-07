@@ -59,7 +59,7 @@ def getMatrix():
         row = []
         matrix1.append(row)
         for x in range(m):
-            print("Enter the number in row ",y, " column ", x,": ")
+            print("Enter the number in row ",y+1, " column ", x+1,": ")
             raw = input()
             try:
                 num_input = int(raw)
@@ -74,7 +74,7 @@ def getMatrix():
         for x in range(p):
             raw = input()
             try:
-                print("Enter the number in row ",y, " column ", x,": ")
+                print("Enter the number in row ",y+1, " column ", x+1,": ")
                 num_input = int(raw)
                 row.append(num_input)
             except:
